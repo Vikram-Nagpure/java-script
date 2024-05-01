@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class Shape {
+    constructor(color) {
+        this.color = color;
+    }
+    getColor() {
+        return this.color;
+    }
+}
+class Circle extends Shape {
+    constructor(color, radius) {
+        super(color);
+        this.radius = radius;
+    }
+}
+class ColoredCircle extends Circle {
+    constructor(color, radius) {
+        super(color, radius);
+    }
+}
+let coloredCircle = new ColoredCircle('blue', 5);
+console.log(coloredCircle.getColor());
+</script>
+
+
+
+<!-- ***Explaination*** -->
+
+<!-- => We define class named Shape with constructor and getColor method.
+
+=> We define class named Circle with constructor and radius property.
+
+=> We define class named ColoredCircle which extends Circle and getColor method.
+
+=> We define class named ColoredCircle which extends Circle and getColor method.
+
+=> We create an instance of ColoredCircle class and call getColor method.
+
+=> We get the color of the circle. -->

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+    speak() {
+        console.log(`${this.name} makes a noise.`);
+    }
+}
+class Dog extends Animal {
+    speak() {
+        console.log(`${this.name} barks.`);
+    }
+}
+
+let dog = new Dog('Buddy');
+dog.speak();
+
+
+// output is "Buddy barks."
+</script>
+
+
+<!-- ***Explaination*** -->
+
+
+<!-- =>  We define a class named Animal with a constructor that accepts a name parameter.
+
+=>  We define a class named Dog that extends Animal.
+
+=>  We define a speak method in the Dog class that overrides the speak method in the Animal class.
+
+=>  We create an instance of the Dog class and call the speak method.
+
+=>  The speak method in the Dog class is called, and the output is "Buddy barks." -->

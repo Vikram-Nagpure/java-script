@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+
+    class Vehicle {
+        constructor(make, model) {
+            this.make = make;
+            this.model = model;
+        }
+        getInfo() {
+            return `Make: ${this.make}, Model: ${this.model}`;
+        }
+    }
+    class Car extends Vehicle {
+        constructor(make, model, year) {
+            super(make, model);
+            this.year = year;
+        }
+        getInfo() {
+            return `${super.getInfo()}, Year: ${this.year}`;
+        }
+    }
+    let myCar = new Car('Toyota', 'Camry', 2020);
+    console.log(myCar.getInfo());
+
+
+</script>
+
+<!-- ***Explaination*** -->
+
+<!-- => We define class named Vehicle with two properties make and model.
+
+=> We define class named Car which extends Vehicle class.
+
+=> We define constructor for Car class which takes make, model and year as parameters.
+
+=> We define getInfo method in Car class which returns make, model and year.
+
+=> We define myCar object of Car class.
+
+=> We call getInfo method of myCar object and print the result. 
+
+
+
+-->
+
+
+
+
+

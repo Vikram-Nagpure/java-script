@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="">
+</body>
+</html>
+<script>
+
+let arr = ['https://images.unsplash.com/photo-1714548529197-537c1f0b6aa7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D','https://images.unsplash.com/photo-1714523479594-13c0bb72fcf3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D','https://plus.unsplash.com/premium_photo-1712615187762-6b025d3ac902?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMXx8fGVufDB8fHx8fA%3D%3D']
+
+let index = 0
+    setInterval(()=>{
+        document.querySelector('img').src = arr[index]
+        index= (index + 1) % arr.length
+    },2000)
+</script>
