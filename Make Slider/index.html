@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        img{
+            margin: auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <img src="" alt="">
+    <img src="" alt="" style="width: 50%; height: 700px;" >
 </body>
 </html>
 <script>
-
-let arr = ['https://images.unsplash.com/photo-1714548529197-537c1f0b6aa7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D','https://images.unsplash.com/photo-1714523479594-13c0bb72fcf3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D','https://plus.unsplash.com/premium_photo-1712615187762-6b025d3ac902?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMXx8fGVufDB8fHx8fA%3D%3D']
+let arr = ['https://m.media-amazon.com/images/I/51DwGfBvcBL._AC_UF894,1000_QL80_DpWeblab_.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsIES8oXpb9CUymwP5jshkCwRSp9dP_-WKVLI1A3LsEw&s','https://wallpaper.forfun.com/fetch/50/5081f28733ce69397d496a2dfdcedc2d.jpeg']
 
 let index = 0
-    setInterval(()=>{
+  setInterval(()=>{
         document.querySelector('img').src = arr[index]
+        
         index= (index + 1) % arr.length
     },2000)
 </script>
