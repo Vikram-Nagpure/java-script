@@ -1,0 +1,32 @@
+body {
+    color: black;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ body h1{
+     color: black;
+     text-align: center;
+ }
+ .main-1 {
+     width: 100%;
+     /* overflow-x: scroll; */
+     color: black;
+     display: flex;
+     justify-content: space-around;
+ }
+ .to{
+     text-align: center;
+     color: black;   
+ }
+ .mini-3{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     text-align: center;
+ }
+ .state{
+     text-align: center;
+     flex-wrap: wrap;
+     display: flex;
+     justify-content: space-around;
+ }
