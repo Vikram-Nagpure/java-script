@@ -1,1 +1,1 @@
-deploy link => "https://shrktank-fe.vercel.app/"
+deploy link => "https://front-end-omega-six.vercel.app/"
